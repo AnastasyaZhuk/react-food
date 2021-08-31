@@ -1,5 +1,9 @@
+<h1>База рецептов</h1>
 
-### `yarn start`
+Возможности:
+- Список всех категорий блюд
+- Просмотр блюд внутри каждой категории
+- Просмотр рецепта 
+- Поиск категории на главной странице: поиск через поле на странице, поиск через указание параметра в url
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Посмотреть демо](https://anastasyazhuk.github.io/react-food/)
