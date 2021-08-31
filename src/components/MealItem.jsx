@@ -18,7 +18,7 @@ const MealItem = (props) => {
                 <span className="card-title">{name}</span>
             </div>
             <div className="card-action">
-                <Link to={`/meal/${id}`} className="btn">Watch recipe</Link>
+                <Link to={`/meal/${id}`} className="btn grey">Watch recipe</Link>
             </div>
         </div>
     );
