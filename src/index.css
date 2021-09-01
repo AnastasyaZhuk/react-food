@@ -43,3 +43,12 @@ iframe {
 .recipeImg {
     width: 400px;
 }
+
+.recipe-instractions {
+    display: flex;
+    flex-direction: row;
+}
+
+.recipe-instractions-item {
+    margin: 20px;
+}

@@ -5,11 +5,7 @@ const Header = () => {
     return (
         <nav className="grey">
             <div className="nav-wrapper">
-                <Link to='/' className="brand-logo">Recipe catalog</Link>
-                <ul id="nav-mobile" className="right hide-on-med-and-down">
-                    <li><Link to='/about'>About</Link></li>
-                    <li><Link to='contacts'>Contacts</Link></li>
-                </ul>
+                <Link to='/' className="brand-logo">Recipe Catalog</Link>
             </div>
         </nav>
     );

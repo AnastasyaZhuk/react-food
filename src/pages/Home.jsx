@@ -36,7 +36,7 @@ const Home = () => {
 
     return (
         <>
-            <Search cb={handleSearch}/>
+            <Search search={handleSearch}/>
             {!catalog.length ? <Preloader/> : (
                 <CategoryList catalog={filteredCatalog}/>
             )}

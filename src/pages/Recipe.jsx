@@ -15,14 +15,19 @@ const Recipe = () => {
 
     return (
         <>
+            <button className="btn grey" onClick={goBack}>Go back</button>
             {!recipe.idMeal
                 ? <Preloader/>
                 : (<div className="recipe">
-                    <h1>{recipe.strMeal}</h1>
-                    <img className="recipeImg" src={recipe.strMealThumb} alt={recipe.strMeal}/>
-                    <h6>Category: {recipe.strCategory}</h6>
-                    {recipe.strArea ? <h6>Area: {recipe.strArea}</h6> : null}
-                    <p>{recipe.strInstructions}</p>
+                    <h2>{recipe.strMeal}</h2>
+                    <div className="recipe-instractions">
+                        <img className="recipeImg recipe-instractions-item" src={recipe.strMealThumb}
+                             alt={recipe.strMeal}/>
+                        <div className="recipe-instractions-item">
+                            <h5>Cooking process:</h5>
+                            <p>{recipe.strInstructions}</p>
+                        </div>
+                    </div>
                     <table className="centered">
                         <thead>
                         <tr>
@@ -46,7 +51,7 @@ const Recipe = () => {
                     </table>
                     {recipe.strYoutube ? (
                         <div className="row">
-                            <h5 style={{margin : '2rem 0 1.5rem'}}>Video Recipe</h5>
+                            <h5 style={{margin: '2rem 0 1.5rem'}}>Video Recipe</h5>
                             <iframe
                                 title={id}
                                 src={`https://www.youtube.com/embed/${recipe.strYoutube.slice(-11)}`}
@@ -55,8 +60,6 @@ const Recipe = () => {
                     ) : null}
                 </div>)
             }
-            <button className="btn grey" onClick={goBack}>Go back</button>
-
         </>
     );
 };
